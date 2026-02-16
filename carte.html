@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Jocelyn ADJOUSSI - Étudiant Réseau, Système et Sécurité</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Style general du fond de la page avec un dégradé et un centrage du contenu */
+        body {
+            background: linear-gradient(135deg, #232526 0%, #414345 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        /* Style de la carte (fond, arrondis, ombre...) */
+        .carte {
+            background: rgba(255,255,255,0.07);
+            border-radius: 20px;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(6px);
+            border: 1px solid rgba(255,255,255,0.18);
+            width: 350px;
+            padding: 32px 28px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+         /* Cercle décoratif bleu/violet en haut à droite */
+        .carte::before {
+            content: '';
+            position: absolute;
+            top: -60px;
+            right: -60px;
+            width: 140px;
+            height: 140px;
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            border-radius: 50%;
+            opacity: 0.25;
+            z-index: 0;
+        }
+        /* Cercle décoratif rose/orange en bas à gauche */
+        .carte::after {
+            content: '';
+            position: absolute;
+            bottom: -50px;
+            left: -50px;
+            width: 120px;
+            height: 120px;
+            background: linear-gradient(135deg, #ff512f 0%, #dd2476 100%);
+            border-radius: 50%;
+            opacity: 0.18;
+            z-index: 0;
+        }
+        /* Contenu de la carte au-dessus des éléments décoratifs */
+        .carte-content {
+            position: relative;
+            z-index: 1;
+        }
+        /* Nom en grand et gras */
+        .nom {
+            font-size: 1.7em;
+            font-weight: bold;
+            color: #232526;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+        }
+        /* Poste en bleu */
+        .poste {
+            font-size: 1.1em;
+            color: #2b69a8;
+            margin-bottom: 18px;
+            letter-spacing: 0.5px;
+        }
+        /* Informations de contact */
+        .infos {
+            font-size: 0.98em;
+            color: #232526;
+            margin-bottom: 8px;
+        }
+        /* Section des réseaux sociaux */
+        .reseaux {
+            margin-top: 18px;
+        }
+        /* Liens des réseaux sociaux */
+        .reseaux a {
+            margin: 0 8px;
+            color: #2575fc;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: color 0.2s;
+        }
+        .reseaux a:hover {
+            color: #dd2476;
+        }
+    </style>
+</head>
+<body>
+    <!-- Carte de visite centrée -->
+    <div class="carte">
+        <div class="carte-content">
+            <!-- Nom -->
+            <div class="nom">Jocelyn ADJOUSSI</div>
+            <!-- Poste -->
+            <div class="poste">Développeur Web débutant (vibe coder )</div>
+            <!-- Email cliquable -->
+            <div class="infos">
+                <a href="mailto:jocelynadjoussi51@gmail.com">jocelynadjoussi51@gmail.com</a>
+            </div>
+            <!-- Numéro de téléphone -->
+            <div class="infos">📞 +228 92 42 81 48</div>
+            <!-- Lien LinkedIn -->
+            <div class="reseaux">
+                <a href="https://www.linkedin.com/in/jocelyn-adjoussi-072b49383" target="_blank" title="LinkedIn">LinkedIn</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
